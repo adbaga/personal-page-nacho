@@ -1,5 +1,4 @@
 import Header from "./components/Header.jsx"
-import JumboTron from "./components/JumboTron"
 import BannerCard from "./components/BannerCard.jsx";
 
 

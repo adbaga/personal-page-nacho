@@ -1,11 +1,31 @@
 import React from 'react'
-import JumboTron from "./JumboTron.jsx"
+import JumboTronMain from "./JumboTronMain.jsx"
+import Img1 from '../assets/img/symbols/instagram.png'
+import PictureCard from './PictureCard'
 
 function BannerCard() {
     return (
-        <div>
+        <div class="h-4/5 px-5 mt-10 lg:mt-40 lg:mx-10 grid lg:grid-flow-col">
 
-            <JumboTron class="lg:2/6 xl:w-2/4 mt-20 lg:mt-40 lg:ml-16 text-left mx-2"/>
+       
+
+                    <JumboTronMain/>
+
+
+
+
+
+                    <PictureCard  images={Img1}></PictureCard>
+
+
+
+
+
+           
+
+            
+
+
             
         </div>
     )

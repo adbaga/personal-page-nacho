@@ -7,18 +7,10 @@ function DropDown() {
 
     const ref = useRef();
 
-  
-    function handleToggle() {
-        setIsMenuOpen(prev => !prev.isMenuOpen);
-      }
-
       useEffect(() => {
 
         const checkIfClickedOutside = e => {
-    
-          // If the menu is open and the clicked target is not within the menu,
-    
-          // then close the menu
+
     
           if (isMenuOpen && ref.current && !ref.current.contains(e.target)) {
     
@@ -31,9 +23,6 @@ function DropDown() {
         document.addEventListener("mousedown", checkIfClickedOutside)
     
         return () => {
-    
-          // Cleanup the event listener
-    
           document.removeEventListener("mousedown", checkIfClickedOutside)
     
         }
