@@ -1,11 +1,13 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect';
 
-function TypeWritter() {
+function TypeWritter(props) {
+
+    let texts = props.texts;
     return (
         <div className="mt-8 text-3xl font-light text-true-gray-500 antialiased">
 
-<Typewriter options={{autoStart: true, loop: true, strings:["Hello World!","Nacho...is a Nerd","Nacho...is afraid of seagulls","Nacho...is gay AF!"]}}
+<Typewriter options={{autoStart: true, loop: true, strings:texts}}
  
 />
             

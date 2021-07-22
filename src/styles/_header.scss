@@ -5,4 +5,17 @@ header{
     .logo {
         color: $base-color;
     }
+
+    #hashtag {
+
+        font-size: x-large;
+
+        color: black;
+    }
+
+    .hamburger {
+
+        background-color: $base-color;
+        border-radius: 20%;
+    }
 }
